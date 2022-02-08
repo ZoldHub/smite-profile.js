@@ -1,0 +1,15 @@
+- Crie conta no git hub
+- Faça download do git e instale
+- Abra o git bash e configure seu nome e email:
+  git config --global user.name "Nome"
+  git config --global user.email "Email@hotmail.com"
+- Abra o Visual Studio Code com o seu projeto e abra o terminal do git bash clicando em terminal e dps em "git" no lado direito.
+- Digite "git init" para iniciar o git no seu projeto
+- Digite "git status" para saber quais arquivos vão subir para o git
+- Digite "git add ." para adicionar todos os arquivos do projeto.
+- Digite "git commit -m "mensagem de commit"
+- Vá na sua conta do git e clique em "Start Project" e preencha as informações necessários.
+- Depois copie as 3 linhas que irão fazer o push para um repositório existente no git.
+  - git remote add origin https://github.com/ZoldHub/AluraCursos.git
+  - git branch -M main
+  - git push -u origin main
