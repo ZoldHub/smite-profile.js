@@ -1,0 +1,36 @@
+Criando servidor básico em node:
+
+const res = require("express/lib/response");
+const http = require("http");
+
+const hostname = "127.0.0.1";
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello World");
+});
+
+server.listen(port, hostname, () => {
+  console.log("Servidor rodando!");
+});
+
+--- Comandos para criar projeto em node:
+
+-> npm init : para criar o projeto na pasta que desejar.
+-> npm install --save express : Instalar dependências no projeto, neste caso a do express
+-> node index.js : Subir o servidor node.
+
+--- Configuração de rota do express.
+
+const path = require("path");
+const router = express.Router();
+
+router.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname + "/index.html"));
+});
+
+router.get("/sobre", function (req, res) {
+  res.sendFile(path.join(__dirname + "/sobre.html"));
+});
